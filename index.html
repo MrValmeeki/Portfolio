@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atharv Babu – Portfolio</title>
+  <!-- Google Fonts - Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="terminal-button close"></div>
+                <div class="terminal-button minimize"></div>
+                <div class="terminal-button maximize"></div>
+            </div>
+            <span class="terminal-title-text">atharv@portfolio:~</span>
+        </div>
+        
+        <div class="terminal-body" id="terminal-body">
+            <div class="ascii-art" id="ascii-art">
+                                                              
+ _____ _   _               _____     _       
+|  _  | |_| |_ ___ ___ _ _| __  |___| |_ _ _ 
+|     |  _|   | .'|  _| | | __ -| .'| . | | |
+|__|__|_| |_|_|__,|_|  \_/|_____|__,|___|___|
+                                             
+                                                                      
+            </div>
+            
+            <div class="prompt">
+                <span class="prompt-sign">$</span>
+                <span class="prompt-user">atharv@portfolio</span>
+                <span>:</span>
+                <span class="prompt-location">~</span>
+                <span>$</span>
+                <span class="prompt-input typing"> whoami</span>
+            </div>
+            
+            <div class="response">
+                <p class="section-title">ABOUT ME</p>
+                <p>I'm a passionate Robotics and AI Engineering student with a strong foundation in programming and system design. My journey in technology is driven by a curiosity to build intelligent systems that can solve real-world problems.</p>
+                <br>
+                <p>With expertise in C++, C, Python, and web development, I enjoy creating projects that bridge hardware and software, particularly in robotics applications and game development.</p>
+                <br>
+                <p>I'm constantly exploring new technologies and methodologies in the field of AI and robotics, with a particular interest in computer vision, machine learning, and autonomous systems.</p>
+            </div>
+            
+            <div class="prompt">
+                <span class="prompt-sign">$</span>
+                <span class="prompt-user">atharv@portfolio</span>
+                <span>:</span>
+                <span class="prompt-location">~</span>
+                <span>$</span>
+                <span class="prompt-input typing"> help</span>
+            </div>
+            
+            <div class="response">
+                <p class="section-title">AVAILABLE COMMANDS</p>
+                
+                <div class="help-grid">
+                    <div class="help-item">
+                        <p class="help-command">whoami</p>
+                        <p class="help-description">Display information about me</p>
+                    </div>
+                    
+                    <div class="help-item">
+                        <p class="help-command">ls -la skills/</p>
+                        <p class="help-description">List all my skills</p>
+                    </div>
+                    
+                    <div class="help-item">
+                        <p class="help-command">cat projects/[name].md</p>
+                        <p class="help-description">View details of a project</p>
+                    </div>
+                    
+                    <div class="help-item">
+                        <p class="help-command">fetch-github --user [username]</p>
+                        <p class="help-description">Fetch GitHub activity</p>
+                    </div>
+                    
+                    <div class="help-item">
+                        <p class="help-command">contact --list</p>
+                        <p class="help-description">Display contact information</p>
+                    </div>
+                    
+                    <div class="help-item">
+                        <p class="help-command">clear</p>
+                        <p class="help-description">Clear the terminal</p>
+                    </div>
+                    
+                    <div class="help-item">
+                        <p class="help-command">help</p>
+                        <p class="help-description">Display this help message</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="terminal-input-area">
+                <span class="prompt-dollar-input">$</span>
+                <span class="prompt-user">atharv@portfolio</span>
+                <span>:</span>
+                <span class="prompt-location">~</span>
+                <span>$</span>
+                <div id="input-container">
+                    <input type="text" id="terminal-input" autofocus>
+                    <span class="blink" id="custom-blinking-cursor">█</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
